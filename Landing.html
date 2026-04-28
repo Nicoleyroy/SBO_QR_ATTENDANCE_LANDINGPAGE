@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SBO QR Attendance System</title>
+
+    <title>SAS-SBO Attendance System</title>
+
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
     <style>
@@ -36,12 +38,20 @@
             <!-- Logo + Text -->
             <div class="flex items-center gap-3">
                 <!-- Logo Image -->
+
                 <img src="sboqrlogo.png" alt="SBO Logo"
+
+                <img src="sboqrlogo.png" alt="SAS Logo"
+
                     class="w-10 h-10 object-contain rounded-lg">
 
                 <!-- Text -->
                 <div class="text-3xl font-extrabold tracking-tighter">
+
                     SBO<span class="text-orange-500">.</span>
+
+                    SAS<span class="text-orange-500">.</span>
+
                 </div>
             </div>
 
@@ -49,7 +59,11 @@
             <div class="hidden md:flex space-x-10 text-sm font-semibold text-slate-400">
                 <a href="#" class="hover:text-orange-500 transition">Overview</a>
                 <a href="#features" class="hover:text-orange-500 transition">Features</a>
+
                 <a href="#learn-more" class="hover:text-orange-500 transition">How it Works</a>
+
+                <a href="#gallery" class="hover:text-orange-500 transition">Gallery</a>
+
             </div>
 
             <!-- Button -->
@@ -97,8 +111,13 @@
 
         <!-- Content -->
         <div class="relative z-20 text-center px-6 max-w-4xl mx-auto">
+
             <h1 class="text-6xl md:text-8xl font-extrabold leading-[0.9] tracking-tighter mb-8 text-white">Smart Flow.<br> <span class="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-amber-600">Pure Ease.</span></h1>
             <p class="text-xl text-slate-400 mb-12 max-w-2xl mx-auto leading-relaxed">Eliminate paper chaos. Seamlessly log student attendance with encrypted QR scanning technology.</p>
+
+            <h1 class="text-6xl md:text-8xl font-extrabold leading-[0.9] tracking-tighter mb-8 text-white">SBO ATTENDANCE<br> <span class="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-amber-600">SYSTEM</span></h1>
+            <p class="text-xl text-slate-400 mb-12 max-w-2xl mx-auto leading-relaxed">Smart Attendance, Zero Hassle -Track student attendance instantly with QR based scanning and real-time insights</p>
+
             <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
                 <button class="bg-gradient-to-br from-orange-500 to-orange-600 px-10 py-4 rounded-2xl font-bold text-lg glow-orange hover:scale-105 transition shadow-lg shadow-orange-900/20">Download APK</button>
                 <button onclick="document.getElementById('learn-more').scrollIntoView({behavior: 'smooth'})" class="glass px-10 py-4 rounded-2xl font-bold text-lg hover:bg-white/10 transition">Learn More</button>
@@ -106,8 +125,90 @@
         </div>
     </header>
 
+
     <!-- Features -->
     <section id="features" class="max-w-7xl mx-auto px-6 py-24">
+
+        <!-- App Showcase Gallery -->
+    <section id="gallery" class="max-w-7xl mx-auto px-6 py-20">
+        <div class="text-center mb-16">
+            <h2 class="text-5xl font-extrabold tracking-tighter mb-4">Interface <span class="text-orange-500">Preview</span></h2>
+            <p class="text-slate-400">Experience the sleek, intuitive design of the SAS QR mobile app.</p>
+        </div>
+
+        <div class="relative max-w-5xl mx-auto">
+            <!-- Image Carousel -->
+            <div id="gallery-container" class="relative overflow-hidden rounded-[3rem] glass border border-white/10 aspect-[16/9] md:aspect-[21/9] flex items-center justify-center">
+                
+                <!-- Slide 1: QR Scanner -->
+                <div class="gallery-slide absolute inset-0 transition-all duration-1000 ease-in-out opacity-100 flex items-center justify-center p-8 md:p-12">
+                    <div class="flex flex-col md:flex-row items-center gap-12 w-full h-full">
+                        <div class="w-full md:w-1/2 flex justify-center">
+                            <div class="relative w-48 h-[400px] bg-slate-900 rounded-[2.5rem] border-[6px] border-slate-800 shadow-2xl overflow-hidden group">
+                                <div class="absolute top-0 w-full h-6 bg-slate-800 flex justify-center items-end pb-1">
+                                    <div class="w-16 h-1 bg-slate-700 rounded-full"></div>
+                                </div>
+                                <img src="qr_scanner.png" alt="QR Scanner" class="w-full h-full object-cover pt-6">
+                            </div>
+                        </div>
+                        <div class="w-full md:w-1/2 text-center md:text-left">
+                            <h3 class="text-3xl font-bold mb-4">Lightning Fast QR Scan</h3>
+                            <p class="text-slate-400 leading-relaxed">Instantly capture attendance with our optimized scanning engine, delivering accurate results in milliseconds even during high volume events.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 2: Dashboard -->
+                <div class="gallery-slide absolute inset-0 transition-all duration-1000 ease-in-out opacity-0 flex items-center justify-center p-8 md:p-12 translate-x-12">
+                    <div class="flex flex-col md:flex-row items-center gap-12 w-full h-full">
+                        <div class="w-full md:w-1/2 flex justify-center">
+                            <div class="relative w-48 h-[400px] bg-slate-900 rounded-[2.5rem] border-[6px] border-slate-800 shadow-2xl overflow-hidden">
+                                <div class="absolute top-0 w-full h-6 bg-slate-800 flex justify-center items-end pb-1">
+                                    <div class="w-16 h-1 bg-slate-700 rounded-full"></div>
+                                </div>
+                                <img src="dashboard.png" alt="Real-time Analytics Dashboard" class="w-full h-full object-cover pt-6">
+                            </div>
+                        </div>
+                        <div class="w-full md:w-1/2 text-center md:text-left">
+                            <h3 class="text-3xl font-bold mb-4">Real-time Analytics Dashboard</h3>
+                            <p class="text-slate-400 leading-relaxed">SAS QR Attendance System is a smart and efficient solution for tracking attendance using QR code technology. It provides real-time monitoring of student participation, instant event updates, and accurate reporting helping organizations manage attendance faster, easier, and more reliable</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 3: Secure ID -->
+                <div class="gallery-slide absolute inset-0 transition-all duration-1000 ease-in-out opacity-0 flex items-center justify-center p-8 md:p-12 translate-x-12">
+                    <div class="flex flex-col md:flex-row items-center gap-12 w-full h-full">
+                        <div class="w-full md:w-1/2 flex justify-center">
+                            <div class="relative w-48 h-[400px] bg-slate-900 rounded-[2.5rem] border-[6px] border-slate-800 shadow-2xl overflow-hidden">
+                                <div class="absolute top-0 w-full h-6 bg-slate-800 flex justify-center items-end pb-1">
+                                    <div class="w-16 h-1 bg-slate-700 rounded-full"></div>
+                                </div>
+                                <img src="student_id.png" alt="Encrypted Student ID" class="w-full h-full object-cover pt-6">
+                            </div>
+                        </div>
+                        <div class="w-full md:w-1/2 text-center md:text-left">
+                            <h3 class="text-3xl font-bold mb-4">Unique Student QR ID</h3>
+                            <p class="text-slate-400 leading-relaxed">Each student is assigned a unique QR code for quick and reliable identification. Designed for convenience, it ensures smooth and organized attendance tracking.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Gallery Controls -->
+            <button onclick="prevGallery()" class="absolute left-[-20px] top-1/2 -translate-y-1/2 glass w-14 h-14 rounded-full flex items-center justify-center hover:bg-orange-500 hover:scale-110 transition z-20">
+                <span class="text-2xl">←</span>
+            </button>
+            <button onclick="nextGallery()" class="absolute right-[-20px] top-1/2 -translate-y-1/2 glass w-14 h-14 rounded-full flex items-center justify-center hover:bg-orange-500 hover:scale-110 transition z-20">
+                <span class="text-2xl">→</span>
+            </button>
+        </div>
+    </section>
+  
+    <!-- Features -->
+    <section id="features" class="max-w-7xl mx-auto px-6 py-20">
+
         <div class="grid md:grid-cols-3 gap-8">
             <div class="glass p-10 rounded-3xl group hover:bg-white/5 transition border border-white/5">
         
@@ -128,10 +229,15 @@
     </section>
 
     <!-- Learn More Section -->
+
     <section id="learn-more" class="max-w-7xl mx-auto px-6 py-24">
         <div class="grid md:grid-cols-2 gap-16 items-center">
             <div class="glass p-12 rounded-[2rem] border border-white/5">
                 <h2 class="text-5xl font-extrabold tracking-tighter mb-8">Why SBO QR?</h2>
+    <section id="learn-more" class="max-w-7xl mx-auto px-6 py-20">
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="glass p-12 rounded-[2rem] border border-white/5">
+                <h2 class="text-4xl font-extrabold tracking-tighter mb-8">Why SAS?</h2>
                 <ul class="space-y-6 text-slate-400">
                     <li class="flex items-center space-x-4">
                         <span class="text-orange-500 text-2xl">✓</span>
@@ -148,7 +254,10 @@
                 </ul>
             </div>
             <div class="glass p-12 rounded-[2rem] border border-white/5">
+
                 <h3 class="text-2xl font-bold mb-6">How It Works</h3>
+
+                <h3 class="text-4xl font-bold mb-8">How It Works</h3>
                 <div class="space-y-6">
                     <div class="flex gap-4">
                         <div class="text-orange-500 font-bold">01</div>
@@ -168,9 +277,25 @@
                     </div>
                 </div>
             </div>
+            <div class="glass p-12 rounded-[2rem] border border-white/5">
+                <h2 class="text-4xl font-extrabold tracking-tighter mb-8">Who is SAS for?</h2>
+                <ul class="space-y-6 text-slate-400">
+                    <li class="flex items-center space-x-4">
+                        <span class="text-orange-500 text-2xl">✓</span>
+                        <span>Schools & Universities</span>
+                    </li>
+                    <li class="flex items-center space-x-4">
+                        <span class="text-orange-500 text-2xl">✓</span>
+                        <span>Student Body Organizations (SBO)</span>
+                    </li>
+                    <li class="flex items-center space-x-4">
+                        <span class="text-orange-500 text-2xl">✓</span>
+                        <span>Event Organizers</span>
+                    </li>
+                </ul>
+            </div>
         </div>
     </section>
-
 
     <!-- Footer -->
     <footer class="border-t border-white/10 bg-slate-950/50">
@@ -187,3 +312,252 @@
 
 </body>
 </html>
+
+      <!-- Meet the Team -->
+    <section id="team" class="max-w-7xl mx-auto px-6 py-10 relative z-30">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8">
+            <!-- Member 1 -->
+            <div class="glass p-6 rounded-3xl border border-white/10 hover:border-orange-500/30 transition group text-center hover:scale-110">
+                <div class="relative inline-block mb-4">
+                    <div class="absolute inset-0 bg-orange-500 blur-xl opacity-20 rounded-full group-hover:opacity-40 transition"></div>
+                    <img src="joseph.png" alt="Lead Developer" class="w-20 h-20 rounded-2xl border border-white/10 relative z-10 object-cover transition duration-500">
+                </div>
+                <div class="text-lg font-bold text-white mb-1">Joseph Ian Ochavillo</div>
+                <div class="text-orange-500 text-[10px] uppercase tracking-widest font-extrabold">Lead Developer</div>
+            </div>
+            <!-- Member 2 -->
+            <div class="glass p-6 rounded-3xl border border-white/10 hover:border-orange-500/30 transition group text-center hover:scale-110">
+                <div class="relative inline-block mb-4">
+                    <div class="absolute inset-0 bg-orange-500 blur-xl opacity-20 rounded-full group-hover:opacity-40 transition"></div>
+                    <img src="dexter.png" alt="UI Designer" class="w-20 h-20 rounded-2xl border border-white/10 relative z-10 object-cover transition duration-500">
+                </div>
+                <div class="text-lg font-bold text-white mb-1">Dexter Ian Peralta</div>
+                <div class="text-orange-500 text-[10px] uppercase tracking-widest font-extrabold">UI/UX Designer</div>
+            </div>
+            <!-- Member 3 -->
+            <div class="glass p-6 rounded-3xl border border-white/10 hover:border-orange-500/30 transition group text-center hover:scale-110">
+                <div class="relative inline-block mb-4">
+                    <div class="absolute inset-0 bg-orange-500 blur-xl opacity-20 rounded-full group-hover:opacity-40 transition"></div>
+                    <img src="joanna.png" alt="System Architect" class="w-20 h-20 rounded-2xl border border-white/10 relative z-10 object-cover transition duration-500">
+                </div>
+                <div class="text-lg font-bold text-white mb-1">Joanna Nicole Yroy</div>
+                <div class="text-orange-500 text-[10px] uppercase tracking-widest font-extrabold">Programmer</div>
+            </div>
+            <!-- Member 4 -->
+            <div class="glass p-6 rounded-3xl border border-white/10 hover:border-orange-500/30 transition group text-center hover:scale-110">
+                <div class="relative inline-block mb-4">
+                    <div class="absolute inset-0 bg-orange-500 blur-xl opacity-20 rounded-full group-hover:opacity-40 transition"></div>
+                    <img src="nicky.png" alt="Product Manager" class="w-20 h-20 rounded-2xl border border-white/10 relative z-10 object-cover transition duration-500">
+                </div>
+                <div class="text-lg font-bold text-white mb-1">Nicky Sarucam</div>
+                <div class="text-orange-500 text-[10px] uppercase tracking-widest font-extrabold">QA Engineer</div>
+            </div>
+        </div>
+    </section>
+
+
+    <script>
+        let currentGallerySlide = 0;
+        const gallerySlides = document.querySelectorAll('.gallery-slide');
+
+        function showGallerySlide(index) {
+            gallerySlides.forEach((slide, i) => {
+                slide.classList.remove('opacity-100', 'translate-x-0');
+                slide.classList.add('opacity-0', 'translate-x-12');
+                
+                if (i === index) {
+                    slide.classList.remove('opacity-0', 'translate-x-12');
+                    slide.classList.add('opacity-100', 'translate-x-0');
+                }
+            });
+        }
+
+        function nextGallery() {
+            currentGallerySlide = (currentGallerySlide + 1) % gallerySlides.length;
+            showGallerySlide(currentGallerySlide);
+        }
+
+        function prevGallery() {
+            currentGallerySlide = (currentGallerySlide - 1 + gallerySlides.length) % gallerySlides.length;
+            showGallerySlide(currentGallerySlide);
+        }
+
+        // Auto-cycle gallery every 6 seconds
+        setInterval(nextGallery, 6000);
+    </script>
+
+
+    
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.testimonial-slide');
+        const dots = document.querySelectorAll('.dot');
+
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.classList.remove('opacity-100', 'translate-x-0', 'pointer-events-auto');
+                slide.classList.add('opacity-0', 'translate-x-10', 'pointer-events-none');
+                dots[i].classList.replace('bg-orange-500', 'bg-white/20');
+                
+                if (i === index) {
+                    slide.classList.remove('opacity-0', 'translate-x-10', 'pointer-events-none');
+                    slide.classList.add('opacity-100', 'translate-x-0', 'pointer-events-auto');
+                    dots[i].classList.replace('bg-white/20', 'bg-orange-500');
+                    dots[i].classList.add('w-6'); // Optional: make active dot wider
+                } else {
+                    dots[i].classList.remove('w-6');
+                }
+            });
+        }
+
+        function nextTestimonial() {
+            currentSlide = (currentSlide + 1) % slides.length;
+            showSlide(currentSlide);
+        }
+
+        function prevTestimonial() {
+            currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+            showSlide(currentSlide);
+        }
+
+        // Auto-cycle every 5 seconds
+        setInterval(nextTestimonial, 5000);
+    </script>
+
+    <!-- Footer -->
+    <footer class="border-t border-white/10 bg-slate-950/50">
+        <div class="max-w-7xl mx-auto px-8 py-10 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="text-2xl font-extrabold tracking-tighter">SAS<span class="text-orange-500">.</span></div>
+            <div class="flex space-x-8 text-sm font-semibold text-slate-400">
+                <button onclick="openModal('privacy')" class="hover:text-white transition cursor-pointer">Privacy</button>
+                <button onclick="openModal('terms')" class="hover:text-white transition cursor-pointer">Terms</button>
+                <button onclick="openModal('support')" class="hover:text-white transition cursor-pointer">Support</button>
+            </div>
+            <div class="text-sm text-slate-600">&copy; 2026 SBO Attendance System.</div>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div id="modal-overlay" class="fixed inset-0 z-50 bg-black/50 backdrop-blur-sm opacity-0 invisible transition-all duration-300">
+    </div>
+    <div id="modal" class="fixed inset-0 z-50 flex items-center justify-center opacity-0 invisible transition-all duration-300 pointer-events-none">
+        <div class="bg-slate-900 rounded-2xl shadow-2xl border border-white/10 w-full max-w-md mx-4 transform scale-95 transition-transform duration-300" id="modal-content">
+            <!-- Close Button -->
+            <div class="flex justify-between items-center p-6 border-b border-white/10">
+                <h2 id="modal-title" class="text-2xl font-bold text-white">Modal Title</h2>
+                <button onclick="closeModal()" class="text-slate-400 hover:text-white transition text-2xl leading-none">×</button>
+            </div>
+            
+            <!-- Modal Body -->
+            <div class="p-6">
+                <div id="modal-body" class="text-slate-300 leading-relaxed space-y-4">
+                    <!-- Content will be inserted here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        /* Modal Animation States */
+        #modal-overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        #modal.active {
+            opacity: 1;
+            visibility: visible;
+            pointer-events-auto;
+        }
+
+        #modal.active #modal-content {
+            transform: scale(1);
+        }
+    </style>
+
+    <script>
+        // Modal Configuration
+        const modalConfig = {
+            privacy: {
+                title: 'Privacy Policy',
+                content: `
+                    <p><strong>Data Collection:</strong> We collect only essential student information including:</p>
+                    <ul style="list-style: disc; padding-left: 1.5rem; margin-top: 0.5rem;">
+                        <li>Student name</li>
+                        <li>Student ID</li>
+                        <li>Attendance records</li>
+                    </ul>
+                    <p style="margin-top: 1rem;"><strong>Data Privacy:</strong> Your data is securely encrypted and stored. We do not share any personal information with third parties.</p>
+                    <p style="margin-top: 1rem;"><strong>Security:</strong> All attendance data is protected with end-to-end encryption.</p>
+                `
+            },
+            terms: {
+                title: 'Terms of Service',
+                content: `
+                    <p><strong>QR Code Usage:</strong> Your unique QR code is personal and confidential. Do not share it with others.</p>
+                    <p style="margin-top: 1rem;"><strong>Proper Usage:</strong> The system must be used for legitimate attendance tracking purposes only.</p>
+                    <p style="margin-top: 1rem;"><strong>Prohibited Activities:</strong></p>
+                    <ul style="list-style: disc; padding-left: 1.5rem; margin-top: 0.5rem;">
+                        <li>Sharing QR codes with others</li>
+                        <li>Attempting to scan codes for other students</li>
+                        <li>Misusing the system for any purpose</li>
+                    </ul>
+                    <p style="margin-top: 1rem;"><strong>Consequences:</strong> Violations may result in disciplinary action.</p>
+                `
+            },
+            support: {
+                title: 'Support & Contact',
+                content: `
+                    <p><strong>Email Support:</strong></p>
+                    <p style="margin-top: 0.5rem; font-family: monospace; background: rgba(255,255,255,0.05); padding: 0.75rem; border-radius: 0.5rem;">sbo.attendance.system@gmail.com</p>
+                    <p style="margin-top: 1rem;"><strong>Response Time:</strong> We typically respond to support requests within 24 business hours.</p>
+                    <p style="margin-top: 1rem;"><strong>Support Hours:</strong> Monday - Friday, 9:00 AM - 5:00 PM</p>
+                    <p style="margin-top: 1rem;"><strong>Common Issues:</strong> If you encounter any problems with QR scanning or attendance verification, please reach out to our support team with details about your issue.</p>
+                `
+            }
+        };
+
+        // Open Modal
+        function openModal(type) {
+            const config = modalConfig[type];
+            const modal = document.getElementById('modal');
+            const overlay = document.getElementById('modal-overlay');
+            const title = document.getElementById('modal-title');
+            const body = document.getElementById('modal-body');
+
+            title.textContent = config.title;
+            body.innerHTML = config.content;
+
+            modal.classList.add('active');
+            overlay.classList.add('active');
+            document.body.style.overflow = 'hidden';
+
+            // Reflow to trigger animation
+            modal.offsetHeight;
+        }
+
+        // Close Modal
+        function closeModal() {
+            const modal = document.getElementById('modal');
+            const overlay = document.getElementById('modal-overlay');
+
+            modal.classList.remove('active');
+            overlay.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+
+        // Close modal when clicking outside
+        document.getElementById('modal-overlay').addEventListener('click', closeModal);
+
+        // Close modal with Escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                closeModal();
+            }
+        });
+    </script>
+
+</body>
+</html>
+
